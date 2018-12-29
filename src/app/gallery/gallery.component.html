@@ -1,0 +1,8 @@
+<div class="grid">
+  <div class="grid-item"
+    *ngFor="let item of images$ | async; let i = index"
+    [lightbox]="i"
+    [gallery]="'myGallery'">
+    <img [src]="item.data.thumb">
+  </div>
+</div>
